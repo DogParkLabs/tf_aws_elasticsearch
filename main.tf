@@ -4,6 +4,7 @@ data "aws_iam_policy_document" "es_management_access" {
   statement {
     actions = [
       "es:*",
+      "cloudwatch:*"
     ]
 
     resources = [
